@@ -3,6 +3,21 @@ let title = document.querySelector('h2');
 
 let a = 1;
 
+section.addEventListener('click', () =>{
+    
+  if (a == 1)
+  {
+  superStar();
+  return a = 0;
+  }else{
+      bolle();
+      return a = 1;
+  }
+  });
+  
+
+
+
 function bolle(){
 
 title.innerText = 'Merry \n Christmas \n & ';
@@ -37,16 +52,7 @@ section.style.background = '#f1f1f1';
 
 bolle()
 
-
-
-
-
-
-
-
 function superStar(){
-
-
 
 title.innerText = 'Happy \n New Year';
 section.style.background = '#ff2a2a';
@@ -61,8 +67,6 @@ var addPulse = function( element ){
   
 }
 
-
-
 for( var starlight = 0; starlight < star; starlight++ ) {
     var aStar = document.createElement('i');
 		aStar.className='star';
@@ -75,11 +79,7 @@ for( var starlight = 0; starlight < star; starlight++ ) {
     aStar.style.left = a+'px';
     aStar.style.top = b+'px';
   
-
-  	
   	document.body.appendChild( aStar );
-  
-  	
   
     addPulse( aStar );
 
@@ -87,17 +87,7 @@ for( var starlight = 0; starlight < star; starlight++ ) {
 
 };
 
-section.addEventListener('click', () =>{
-    
-if (a == 1)
-{
-superStar();
-return a = 0;
-}else{
-    bolle();
-    return a = 1;
-}
-});
+
 
 
 

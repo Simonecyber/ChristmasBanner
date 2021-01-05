@@ -106,7 +106,7 @@ section i:nth-child(even){
 
 .star.pulse
 {
-  animation: STAR 2s infinite; /* Safari 4+ */
+  animation: STAR 2s infinite;
 }
 
 
