@@ -95,6 +95,19 @@ section i:nth-child(even){
 }
 
 /* Buon Anno*/
+.star {
+  height: 1px;
+  width: 1px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px white;
+  background: powderblue;
+  position: absolute;
+}
+
+.star.pulse
+{
+  animation: STAR 2s infinite; /* Safari 4+ */
+}
 
 
 @keyframes STAR {
@@ -131,19 +144,7 @@ section i:nth-child(even){
   }
   
   
-  .star {
-    height: 1px;
-    width: 1px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px white;
-    background: powderblue;
-    position: absolute;
-  }
   
-  .star.pulse
-  {
-    animation: STAR 2s infinite; /* Safari 4+ */
-  }
 
 
   
