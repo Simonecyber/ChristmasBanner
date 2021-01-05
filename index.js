@@ -39,7 +39,7 @@ section.style.background = '#f1f1f1';
         bolla.style.height = 1+size+'px';
 
         bolla.style.animationDuration = 5+size+'s';
-        bolla.style.animationDelay = -7+size+'s';
+        bolla.style.animationDelay = -5+size+'s';
 
         section.appendChild(bolla);
 
@@ -74,7 +74,7 @@ for( var starlight = 0; starlight < star; starlight++ ) {
   	var a = Math.floor(Math.random()*window.innerWidth);
     var b = Math.floor(Math.random()*window.innerHeight);
   
-    let size = Math.random()*3;
+  
 
     aStar.style.left = a+'px';
     aStar.style.top = b+'px';
