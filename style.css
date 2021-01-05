@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Redressed', cursive;
+}
+
+/*manca il font*/
+
+body {
+    overflow: hidden;
+
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+section .box {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+
+}
+
+section .box .button{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #fff, #e4e3e8);
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+section .box .button::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: linear-gradient(315deg, #fff, #e4e3e8);
+    border-radius: 50%;
+}
+
+section .box .button h2 {
+    position: absolute;
+    z-index: 2;
+    font-size: 4em;
+    color: #ff2a2a;
+    text-align: center;
+    
+}
+
+section i{
+
+    position: absolute;
+    background:  #ff2a2a;
+    border-radius: 100%;
+    animation: animate linear infinite;
+    
+}
+
+section i:nth-child(even){
+    background: transparent;
+    border: 1px solid #ff2a2a;
+
+}
+@keyframes animate{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-2000%);
+        opacity: 0;
+    }
+}
+
+/* Buon Anno*/
+
+
+@keyframes STAR {
+    0% {
+      background: powderblue;
+      height: 1px;
+      width: 1px;
+      box-shadow: 0px 0px 10px white;
+    }
+    10% {
+      background: #b0e5de;
+    }
+    20% {
+      background: #b0e5cc;
+    }
+    30% {
+      background: #cce5b0;
+    }
+    40% {
+      background: #dae5b0;
+    }
+    50% {
+      background: #e5ddb0;
+      width: 4px;
+      height: 4px;
+      box-shadow: 0px 0px 10px #d3bd3d;
+    }
+    100% {
+      width: 1px;
+      height: 1px;
+      background: powderblue;
+      box-shadow: 0px 0px 10px white;
+    }
+  }
+  
+  
+  .star {
+    height: 1px;
+    width: 1px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px white;
+    background: powderblue;
+    position: absolute;
+  }
+  
+  .star.pulse
+  {
+    animation: STAR 2s infinite; /* Safari 4+ */
+  }
+
+
+  
