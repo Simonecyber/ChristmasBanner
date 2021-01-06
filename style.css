@@ -25,8 +25,8 @@ section{
 
 section .box {
     position: absolute;
-    width: 450px;
-    height: 450px;
+    width: 60vh;
+    height: 60vh;
 
 }
 

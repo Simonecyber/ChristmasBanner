@@ -1,22 +1,8 @@
 let section = document.querySelector('section');
 let title = document.querySelector('h2');
 
-let a = 1;
-
-section.addEventListener('click', () =>{
-    
-  if (a == 1)
-  {
-  superStar();
-  return a = 0;
-  }else{
-      bolle();
-      return a = 1;
-  }
-  });
+section.addEventListener('click', changeBg);
   
-
-
 
 function bolle(){
 
@@ -25,7 +11,7 @@ section.style.background = '#f1f1f1';
     
     const count = 250;
    
-    var i = 0;
+    var i =0;
 
     while(i<count){
         let bolla = document.createElement('i');
@@ -52,7 +38,7 @@ section.style.background = '#f1f1f1';
 
 bolle()
 
-function superStar(){
+function changeBg(){
 
 title.innerText = 'Happy \n New Year';
 section.style.background = '#ff2a2a';
